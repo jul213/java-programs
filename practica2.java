@@ -1,4 +1,4 @@
-/* anagramas ejercisio 2
+/* anagramas ejercisio 2 programa
  * Escribe una función que reciba dos palabras (String) y retorne
  * verdadero o falso (Bool) según sean o no anagramas.
  * - Un Anagrama consiste en formar una palabra reordenando TODAS
