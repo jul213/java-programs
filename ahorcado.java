@@ -1,13 +1,18 @@
 import java.util.Scanner;
+import java.util.Random;
 public class ahorcado {
  public static void main(String[] args){
 
     Scanner entrada = new Scanner(System.in);
 
-    String Secret = "intelligencia";
+    String[] palabrasSecretas = {"intelligencia", "java", "mundo", "universo" , "melancolia", "amor"};
     int maxIntentos = 10;
     int intentos = 0;
     boolean palabraRevelada = false;
+
+  // seleccion diferente de palabras a traves de Random
+  Random random = new Random();
+  String secret = palabrasSecretas[random.nexInt(palabrasSecretas.length)];
 
     //arreglos:
 
