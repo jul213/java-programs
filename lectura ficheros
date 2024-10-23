@@ -4,5 +4,11 @@ try {
 
   try {
       byte[]  datos = fichero.readAllBytes();
+
+      for(byte dato: datos){
+      System.out.println((char)dato);
+  }
   } catch (IOException e) {
-    system.out.println("")
+    system.out.println("no puedo leer el fichero" + e.getMessage());
+}
+
