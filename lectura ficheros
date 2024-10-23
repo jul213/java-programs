@@ -1,3 +1,8 @@
 public static void main(String[] args) {
 try {
-  inputStream fihero = new FileInputStream("/etc/hola")
+  inputStream fihero = new FileInputStream("/etc/hola");
+
+  try {
+      byte[]  datos = fichero.readAllBytes();
+  } catch (IOException e) {
+    system.out.println("")
