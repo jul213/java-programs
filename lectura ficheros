@@ -6,7 +6,7 @@ try {
       byte[]  datos = fichero.readAllBytes();
 
       for(byte dato: datos){
-      System.out.println((char)dato);
+      System.out.println((char)dato); // hacemos casting
   }
   } catch (IOException e) {
     system.out.println("no puedo leer el fichero" + e.getMessage());
