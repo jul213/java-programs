@@ -1,0 +1,3 @@
+public static void main(String[] args) {
+try {
+  inputStream fihero = new FileInputStream("/etc/hola")
