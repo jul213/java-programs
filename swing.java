@@ -16,7 +16,15 @@ public class MainForm {
 
     public MainForm () {
         
-        buttonCalculate.addActionListener(botonPulsado());
+        pricePane.addKeyListener(new KeyAdapter() {
+            @override
+            public void keyTyped(KeyEvent e){
+                super.keyTypad(e);
+                pricePane.getText();
+                String valorPrecio = pricePane.getText() + "ñ";
+                pricePane.setText(valorPrecio);
+            }
+        })
     }
 
     public static void main(string []args) {
