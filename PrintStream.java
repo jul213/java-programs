@@ -3,6 +3,7 @@ public class Main {
         try { 
             InputStream in = new FileInputStream("ruta del fichero a leer");
             byte []datos = in.readAllBytes();  //leer fichero
+            in.close() //buena practica cerrar fichero
 
             PrintSream out = new PrintStream("destino.txt"); // copiar fichero 
             out.write(datos);
