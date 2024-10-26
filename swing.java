@@ -9,7 +9,9 @@ public class MainForm {
     private JButton buttonCalculate;
 
     public ActionListener botonPulsado(){
-        System.out.println("soy un boton");
+         return actionPerformed(ActionEvent e){
+
+         }
     }
 
     public MainForm () {
