@@ -17,7 +17,7 @@ public class MainForm {
     public MainForm () {
         
         pricePane.addKeyListener(new KeyAdapter() {
-            @override
+            @override // sobre escribe metodos genericos
             public void keyTyped(KeyEvent e){
                 super.keyTypad(e);
                 pricePane.getText();
