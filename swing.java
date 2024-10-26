@@ -32,7 +32,7 @@ public class MainForm {
                 }
 
             }
-        })
+        });
         pricePane.addKeyListener(new KeyAdapter() {
             @override // sobre escribe metodos genericos
             public void keyTyped(KeyEvent e){
@@ -41,7 +41,7 @@ public class MainForm {
                 String valorPrecio = pricePane.getText() + "ñ";
                 pricePane.setText(valorPrecio);
             }
-        })
+        });
     }
 
     public static void main(string []args) {
