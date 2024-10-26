@@ -10,5 +10,7 @@ public class MainForm {
 
     public static void main(string []args) {
         JFrame frame = new JFrame("swingTax");
+        frame.setContentPane(new MainForm().taxPane);
+        frame.setVisible(true);
     }
 }
