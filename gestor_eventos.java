@@ -28,3 +28,14 @@ class Receptor implements Mensajero {
         System.out.println("soy un receptor");
     }
 }
+
+public class Main {
+    public static void main(String []args){
+        Emisor emisor = new Emisor();
+        Receptor receptor = new Receptor();
+
+        emisor.receptor(receptor);
+
+        emisor.saludo();
+    }
+}
