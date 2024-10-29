@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 interface Mensajero {
     void saludo();
+    void notifica();
 }
 
 class Emisor {
@@ -27,6 +28,9 @@ class Receptor implements Mensajero {
     public void saludo(){
         System.out.println("soy un receptor");
     }
+    public void notifica(){
+        System.out.println("a sido notificado");
+    }
 }
 
 public class Main {
@@ -38,4 +42,4 @@ public class Main {
 
         emisor.saludo();
     }
-}
+} 
