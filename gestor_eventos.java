@@ -22,4 +22,9 @@ class Emisor {
     }
 }
 
-class Receptor implements
+class Receptor implements Mensajero {
+    @override
+    public void saludo(){
+        System.out.println("soy un receptor");
+    }
+}
