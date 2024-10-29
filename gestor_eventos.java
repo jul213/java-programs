@@ -41,5 +41,6 @@ public class Main {
         emisor.receptor(receptor);
 
         emisor.saludo();
+        emisor.notifica();
     }
 } 
