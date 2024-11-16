@@ -11,7 +11,8 @@ public class Main {
             //creamos el tokenizador 
             JSONTokener tokener = new JSONTokener(is);
 
-            
+            // pasamos a la  instancia de la clase JSONObject
+            JSONObject obj = new JSONObject(tokener);
         }
     }
 }
