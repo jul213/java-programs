@@ -12,7 +12,7 @@ public class Main {
 
                 //obtenemos usuario y clave
 
-                String usuario = document.getElementsByTagName("usuario").item(0).getTextContent();
+                String usuario = document.getElementsByTagName("usuario").item(0).getTextContent(); //el item sirve para cuando hay mas de un tag igual see trata  como un  array siendo el primer tag 0  y asi sucesivamente
                 String clave = docuent.getElementsByTagName("clave").item(0).getTextContent(); 
 
             }
