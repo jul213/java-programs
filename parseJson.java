@@ -27,6 +27,8 @@ public class Main {
             for(Object imagen: immagenes){
                 System.out.println(imagen.toString());
             }
+        } catch(Exception e){
+            System.out.println("el error es el siguiente" + e.getMessage());
         }
     }
 }
