@@ -22,7 +22,11 @@ public class Main {
 
             System.out.println("usuario" + usuario + "clave" + clave);
 
-            
+            //dentro de credenciales tenemos imagenes
+            JSONArray imagenes = credenciales.getJSONArray("imagenes");
+            for(Object imagen: immagenes){
+                System.out.println(imagen.toString());
+            }
         }
     }
 }
