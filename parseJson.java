@@ -8,7 +8,10 @@ public class Main {
             //creacion del inputstream
             InputStream is = new FileInputStream("datos.json");
 
-            //
+            //creamos el tokenizador 
+            JSONTokener tokener = new JSONTokener(is);
+
+            
         }
     }
 }
