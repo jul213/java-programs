@@ -8,6 +8,13 @@ public class Main {
 
             try{
                 //analizamos documento
+                Document document = documentBuilders.parse(file);
+
+                //obtenemos usuario y clave
+
+                String usuario = document.getElementsByTagName("usuario").item(0).getTextContent();
+                String clave = docuent.getElementsByTagName("clave").item(0).getTextContent(); 
+
             }
         }
     }
