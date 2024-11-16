@@ -13,6 +13,12 @@ public class Main {
 
             // pasamos a la  instancia de la clase JSONObject
             JSONObject obj = new JSONObject(tokener);
+
+            //sacamos credenciales
+            JSONObject credenciales = obj.getJSONObject("credenciales");
+
+            String usuario = credenciales.getString("usuario");
+            String clave = credenciales.getString("clave");
         }
     }
 }
