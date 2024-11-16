@@ -18,7 +18,11 @@ public class Main {
             JSONObject credenciales = obj.getJSONObject("credenciales");
 
             String usuario = credenciales.getString("usuario");
-            String clave = credenciales.getString("clave");
+            String clave = credenciales.getString("clave"); 
+
+            System.out.println("usuario" + usuario + "clave" + clave);
+
+            
         }
     }
 }
