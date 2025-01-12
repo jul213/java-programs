@@ -1,5 +1,6 @@
-# programas-java 
-programas de java
+# java 
+
+- **programas de java**
 
 ***
 este es un repositorio de programas en java unos mas basicos que otros pero con el fin de aprender las diferentes posibilidades utilizando java y muchas funciones del mismo
