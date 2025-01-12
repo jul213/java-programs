@@ -17,7 +17,7 @@ class hilos extends thread {
         t1 = new hilos("soy el primer hilo");
         t2 = new hilos("soy el segundo hilo");
         t1.start();
-        t1.join();
+        t2.start();
     }
 
 
