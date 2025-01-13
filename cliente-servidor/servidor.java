@@ -18,16 +18,32 @@ public class Servidor {
             serverAddr = new ServerSocket(4200);
         } 
         catch (Exception e){
-            System.out.println("error creando el socket");
+            System.out.println("error creando el socket" + e.getMessage());
         }
 
         while (true){
             try {
-                sc = serverAddr.Accept();
+                sc = serverAddr.Accept(); //espera la conexion aceptada al servidor
 
                 DataInputStream is = new DataInputStream(sc.getInputStream);
                 DataOutputStream out = new DataOutputStream(sc.getOutputStream);
 
+                op = is.readByte();
+                n1 = is.readInt();
+                n2 = is.readInt();
+
+                if (op == 0){
+                    respuesta = n1 + n2;
+                } else {
+                    respuesta = n1-n2;
+                }
+
+                out.flush();
+                sc.close();
+
+
+            } catch (Exception e) {
+                    System.out.println("error en las operaciones" + e.getMessage());
             }
         }
     }
